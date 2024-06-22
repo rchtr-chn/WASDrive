@@ -1281,6 +1281,22 @@ PrefabInstance:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9083938360545832800, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083938360545832800, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083938360545832800, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083938360545832800, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 026a1b1e455d19548b85cc27a130c5b9, type: 2}
     - target: {fileID: 9198230257866798669, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
       propertyPath: m_Enabled
       value: 1
