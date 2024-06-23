@@ -43,11 +43,18 @@ public class Timer : MonoBehaviour
         Debug.Log(timer);
         if(timer < 0)
         {
+            timerText.text = string.Format("00:00");
             gameOver.gameOver();
             controls.enabled = false;
         }
 
         int seconds = Mathf.FloorToInt(timer);
-        timerText.text = string.Format("00:{0}", seconds);
+        if(timer < 10) {
+            timerText.text = string.Format("00:0{0}", seconds);
+        } else if(timer > 10){
+            timerText.text = string.Format("00:{0}", seconds);
+        }
+
+
     }
 }

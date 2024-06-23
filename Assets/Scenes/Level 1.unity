@@ -1225,6 +1225,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7251612402722265193, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ff55198b96430f04cb22241145e5d071, type: 3}
+    - target: {fileID: 7251612402722265193, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
+      propertyPath: clip2
+      value: 
+      objectReference: {fileID: 8300000, guid: f3e68883c6971a34b9f322d63eb79c73, type: 3}
     - target: {fileID: 7642294212680306814, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
       propertyPath: m_Name
       value: player1
@@ -1290,8 +1298,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9083938360545832800, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f3e68883c6971a34b9f322d63eb79c73, type: 3}
+    - target: {fileID: 9083938360545832800, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
+      propertyPath: BypassEffects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083938360545832800, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083938360545832800, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
+      propertyPath: BypassReverbZones
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9083938360545832800, guid: 2b0dce40cc160724fb6ee374f880e0a6, type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -1945,6 +1965,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1398890823985350601, guid: a7ff1264bbc9c984fb0bfc7c2688279a, type: 3}
+      propertyPath: timer
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 1398890823985350601, guid: a7ff1264bbc9c984fb0bfc7c2688279a, type: 3}
       propertyPath: timerText
       value: 
