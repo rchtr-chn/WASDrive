@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,12 +7,12 @@ using UnityEngine.UI;
 
 public class changeSceneScript : MonoBehaviour
 {
-    private GameObject gameOverScreen;
-    private GameObject headCanvas;
-    private GameObject stageClearScreen;
-    private GameObject transmission;
+    public GameObject gameOverScreen;
+    public GameObject headCanvas;
+    public GameObject stageClearScreen;
+    public GameObject transmission;
+    public GameObject settings;
     public GameObject pauseMenu;
-    private static bool IsPaused = false;
 
     void Start()
     {
@@ -20,31 +21,44 @@ public class changeSceneScript : MonoBehaviour
         if(headCanvas != null) {
             Transform pauseMenuOBJ = headCanvas.transform.Find("Pause Menu");
             pauseMenu = pauseMenuOBJ.gameObject;
+            headCanvas = GameObject.Find("Canvas");
 
             Transform stageClearOBJ = headCanvas.transform.Find("Stage Clear");
             stageClearScreen = stageClearOBJ.gameObject;
+            headCanvas = GameObject.Find("Canvas");
 
             Transform gameOverOBJ = headCanvas.transform.Find("Game Over");
             gameOverScreen = gameOverOBJ.gameObject;
+            headCanvas = GameObject.Find("Canvas");
 
             Transform transmissionOBJ = headCanvas.transform.Find("Transmission");
             transmission = transmissionOBJ.gameObject;
+            headCanvas = GameObject.Find("Canvas");
+
+            Transform settingsOBJ = headCanvas.transform.Find("optionsmenu");
+            settings = settingsOBJ.gameObject;
         }
     }
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            if(IsPaused)
-            {
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            if(pauseMenu.activeInHierarchy == false) {
+                Pause();
+            }
+            else {
                 Resume();
             }
-            else
-            {
+        }
+        if(Input.GetKeyDown(KeyCode.Tab)) {
+            if(settings.activeInHierarchy == false) {
+                ToSettings();
+            }
+            else {
                 Pause();
             }
         }
     }
+
     public void gameOver()
     {
         gameOverScreen.SetActive(true);
@@ -59,21 +73,23 @@ public class changeSceneScript : MonoBehaviour
     }
 
     public void ToSettings() {
-        SceneManager.LoadScene("Options");
+        Debug.Log("settings!");
+            settings.SetActive(true);
+            pauseMenu.SetActive(false);
     }
 
     public void Resume()
     {
-        pauseMenu.SetActive(false);
+        Debug.Log("resumed!");
+            pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        IsPaused=false;
     }
 
     public void Pause()
     {
-        pauseMenu.SetActive(true);
+            pauseMenu.SetActive(true);
+            settings.SetActive(false);
         Time.timeScale = 0f;
-        IsPaused=true;
     }
 
     public void ToMainMenu() {
@@ -99,16 +115,5 @@ public class changeSceneScript : MonoBehaviour
     {
         SceneManager.LoadScene("Level 5");
     }
-    public void toLevel6()
-    {
-        SceneManager.LoadScene("Level 6");
-    }
-    public void toLevel7()
-    {
-        SceneManager.LoadScene("Level 7");
-    }
-        public void toLevel8()
-    {
-        SceneManager.LoadScene("Level 8");
-    }
 }
+

@@ -38,9 +38,9 @@ public class Timer : MonoBehaviour
         if(timer > 0 && controls.enabled == true)
         {
             timer -= Time.deltaTime;
-            Debug.Log(timer);
+            // Debug.Log(timer);
         }
-        Debug.Log(timer);
+        // Debug.Log(timer);
         if(timer < 0)
         {
             timerText.text = string.Format("00:00");

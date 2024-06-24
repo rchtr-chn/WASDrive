@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3659609568076338034}
-  - component: {fileID: 6717096661120860465}
   - component: {fileID: 1398890823985350601}
+  - component: {fileID: 1687557852659333948}
   m_Layer: 0
   m_Name: Logic
   m_TagString: Untagged
@@ -33,20 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6717096661120860465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4270806679604226437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50a9f141882b39d4ba84c63ef3e24df7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverScreen: {fileID: 0}
-  stageClearScreen: {fileID: 0}
 --- !u!114 &1398890823985350601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,3 +46,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 45
+--- !u!114 &1687557852659333948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4270806679604226437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a9f141882b39d4ba84c63ef3e24df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 0}
+  headCanvas: {fileID: 0}
+  stageClearScreen: {fileID: 0}
+  transmission: {fileID: 0}
+  settings: {fileID: 0}
+  pauseMenu: {fileID: 0}
