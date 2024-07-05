@@ -13,6 +13,7 @@ public class changeSceneScript : MonoBehaviour
     public GameObject transmission;
     public GameObject settings;
     public GameObject pauseMenu;
+    public GameObject tutorial_screen;
 
     void Start()
     {
@@ -41,6 +42,11 @@ public class changeSceneScript : MonoBehaviour
     }
 
     void Update() {
+        if(tutorial_screen.activeInHierarchy == true) {
+            Time.timeScale = 0f;
+        } else {
+            Time.timeScale = 1f;
+        }
         if(Input.GetKeyDown(KeyCode.Escape)) {
             if(pauseMenu.activeInHierarchy == false) {
                 Pause();
@@ -55,6 +61,11 @@ public class changeSceneScript : MonoBehaviour
             }
             else {
                 Resume();
+            }
+        }
+        if(Input.GetMouseButtonDown(0)) {
+            if(tutorial_screen.activeInHierarchy == true) {
+                tutorial_screen.SetActive(false);
             }
         }
     }
