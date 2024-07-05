@@ -54,7 +54,7 @@ public class changeSceneScript : MonoBehaviour
                 ToSettings();
             }
             else {
-                Pause();
+                Resume();
             }
         }
     }
@@ -76,6 +76,7 @@ public class changeSceneScript : MonoBehaviour
         Debug.Log("settings!");
             settings.SetActive(true);
             pauseMenu.SetActive(false);
+            Time.timeScale = 0f;
     }
 
     public void Resume()
@@ -83,6 +84,9 @@ public class changeSceneScript : MonoBehaviour
         Debug.Log("resumed!");
             pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        if(settings.activeInHierarchy == true) {
+                settings.SetActive(false);
+        }
     }
 
     public void Pause()
