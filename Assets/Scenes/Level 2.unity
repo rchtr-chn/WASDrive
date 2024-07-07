@@ -1507,6 +1507,14 @@ PrefabInstance:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 305627444}
+    - target: {fileID: 1687557852659333948, guid: a7ff1264bbc9c984fb0bfc7c2688279a, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 1041569277}
+    - target: {fileID: 1687557852659333948, guid: a7ff1264bbc9c984fb0bfc7c2688279a, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1607977699}
     - target: {fileID: 3659609568076338034, guid: a7ff1264bbc9c984fb0bfc7c2688279a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.807179
@@ -1723,6 +1731,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7425864573421245928, guid: ca568c3104314c348aed35623ef926a1, type: 3}
   m_PrefabInstance: {fileID: 990796483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1041569277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4132272810544910631, guid: 5ff8c6ba6a4b94b43823281526a4eef3, type: 3}
+  m_PrefabInstance: {fileID: 305627443}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1087303060
 PrefabInstance:
@@ -2033,6 +2046,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907184720677853008, guid: 46cb89403b2064048a7e17880c43557a, type: 3}
   m_PrefabInstance: {fileID: 1561498918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1607977699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3366721142350750458, guid: 5ff8c6ba6a4b94b43823281526a4eef3, type: 3}
+  m_PrefabInstance: {fileID: 305627443}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1640869487
 PrefabInstance:
